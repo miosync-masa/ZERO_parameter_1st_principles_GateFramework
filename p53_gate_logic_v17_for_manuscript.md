@@ -501,22 +501,10 @@ Representative: P4R, P58R, P58T, P60L, P295L, P301L, P309S, P318L
 
 **Why these are pathogenic:** These Pro residues are not within any defined SLiM, not at SLiM boundaries, and not near PTM sites. Yet their loss causes pathogenicity. The hypothesized mechanism is polymer persistence length maintenance — Pro's rigid ring constrains backbone φ≈-65°, maintaining the "stiffness" of the IDR chain to prevent domain collapse or self-aggregation.
 
-**Why no Gate exists:** The Kuhn length hypothesis (巴) predicts that isolated Pro (large gap to neighboring Pro) should be critical. Data analysis confirmed the direction (P295L=Path with gap=22; P300L=Benign with gap=6) but the gap threshold could not cleanly separate Path from Benign across all variants (gap>20: Path=4, Benign=3). An additional physical condition is needed. The "aberrant folding" hypothesis (巴: P→helix-capable residue in high-HELIX_PROP environment triggers unwanted helix formation) was tested and rejected — local HELIX_PROP does not separate the classes (Path mean=0.377, Benign mean=0.403). A partial insight emerged: P295L (mt=L, HELIX_PROP=0.79) vs P295S (mt=S, HELIX_PROP=0.29) at the same position — the replacement residue's helix-forming ability may matter, but insufficient data prevents Gate construction.
+**Why no Gate exists:** The Kuhn length hypothesis predicts that isolated Pro (large gap to neighboring Pro) should be critical. Data analysis confirmed the direction (P295L=Path with gap=22; P300L=Benign with gap=6) but the gap threshold could not cleanly separate Path from Benign across all variants (gap>20: Path=4, Benign=3). An additional physical condition is needed. The "aberrant folding" hypothesis (P→helix-capable residue in high-HELIX_PROP environment triggers unwanted helix formation) was tested and rejected — local HELIX_PROP does not separate the classes (Path mean=0.377, Benign mean=0.403). A partial insight emerged: P295L (mt=L, HELIX_PROP=0.79) vs P295S (mt=S, HELIX_PROP=0.29) at the same position — the replacement residue's helix-forming ability may matter, but insufficient data prevents Gate construction.
 
 **What would resolve it:** (1) Polymer physics simulation of p53 IDR with systematic Pro→X substitutions measuring end-to-end distance and compaction. (2) Circular dichroism spectroscopy of IDR peptide fragments with Pro→Leu vs Pro→Ser mutations, measuring secondary structure content. (3) Kuhn length measurements of p53 IDR segments.
 
-### Hypotheses Tested and Deferred
-
-| Hypothesis | Source | Result | Status |
-|------------|--------|--------|--------|
-| PPII spacer β-branch disruption | 巴 | PRD Sens +26.7pp | ✅ Implemented |
-| SLiM boundary N-cap helix breaker | 巴 | P12L/R captured, FP=0 | ✅ Implemented |
-| Proline-directed kinase [S/T]-P | ご主人さま | 3 motifs confirmed | ✅ Implemented |
-| IDR Rigidity (persistence length) | 巴 | Gap threshold non-separating | ⏸ HOLD — needs +1 physical condition |
-| Aberrant folding (safety pin + local HELIX_PROP) | 巴 | Path mean HP=0.377 < Benign mean HP=0.403 | ❌ Rejected — direction reversed |
-| Replacement residue HELIX_PROP | Audit | P295L(Path)/P295S(Ben) at same pos | 🔍 Partial insight — insufficient N |
-
----
 
 ## Tier S Summary — Structured Domains (benign=0, position-independent)
 
@@ -541,10 +529,3 @@ Representative: P4R, P58R, P58T, P60L, P295L, P301L, P309S, P318L
 | 12 | NLS charge loss | Importin-α recognition | Basic→neutral = nuclear import signal abolished |
 
 ---
-
-## Contributors
-
-- **Masamichi Iizumi** — Gate & Channel theory, SSOC framework, 3 principles, Proline-directed kinase discovery, ClinVar resolution analysis
-- **Tamaki Iizumi (環)** — Implementation, structural analysis, 1YCR interface extraction, MECE precision audit, physics audit pipeline, 16→17 version evolution
-- **牧瀬紅莉栖** — Ramachandran unified principle, Tier classification
-- **巴 (Gemini)** — Salt bridge zipper, Met sulfur network, PPII spacer β-branch (Gate A2), SLiM boundary N-cap, Aberrant folding hypothesis (tested→rejected), 1D local context concept (Kuhn length analogy)
