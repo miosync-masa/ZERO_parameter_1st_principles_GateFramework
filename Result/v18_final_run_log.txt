@@ -1,0 +1,127 @@
+========================================================================
+ p53 Gate & Channel v18 FINAL (integrated)
+ (1) Gate C: MDM2 only → MDM2+CBP+p300_CH1+p300_TAZ2 (47 residues)
+ (2) Geta: V↔I swap on Ch3_Core (Core)
+ (3) Geta: IDR conservative PTM±1 (K↔R, R↔H, S↔T) on Ch7_PTM
+========================================================================
+Setting up structures...
+Loading ClinVar data...
+Total ClinVar: 1374, In scope: 1369
+
+╔═══════════════════════════════════════════════════════════════╗
+║  p53 Gate & Channel v17 — FULL-LENGTH RESULTS                 ║
+╠═══════════════════════════════════════════════════════════════╣
+║  Variants evaluated:  1369                                ║
+║  TP:  547   FP:  67   FN:  100   TN:  67                     ║
+║  Sensitivity:   84.5%                                       ║
+║  Specificity:   50.0%                                       ║
+║  PPV:           89.1%                                       ║
+║  NPV:           40.1%                                       ║
+║  Hotspots:      9/9                                          ║
+║  Parameters:    ZERO                                          ║
+║  VUS candidates: 407                                      ║
+╚═══════════════════════════════════════════════════════════════╝
+
+Region                     N    TP   FP    FN   TN   Sens%   Spec%
+-----------------------------------------------------------------
+Core (94-289)            821   412   20    41   20   90.9%   50.0%
+Tet (325-356)            106    27   11    13    7   67.5%   38.9%
+TAD1 (1-40)               89    35    7     3    4   92.1%   36.4%
+TAD2 (41-61)              57    16    7     5    2   76.2%   22.2%
+PRD (62-93)               98    20    6    10   11   66.7%   64.7%
+Linker (290-324)          99    13    6    18   16   41.9%   72.7%
+CTD (357-393)             99    24   10    10    7   70.6%   41.2%
+
+■ IDR gate firing:
+  Ch10_SLiM          CLOSED: 190  PARTIAL:   0
+  Ch5_IDR_Pro        CLOSED:  92  PARTIAL:   0
+  Ch7_PTM            CLOSED: 101  PARTIAL:   0
+  GateB_IDR_Gly      CLOSED:  24  PARTIAL:   0
+
+■ IDR FP (36):
+  P4L ← Ch10_SLiM
+  P4Q ← Ch10_SLiM
+  P8L ← Ch5_IDR_Pro, Ch7_PTM, Ch10_SLiM
+  P8R ← Ch5_IDR_Pro, Ch7_PTM, Ch10_SLiM
+  D21A ← Ch7_PTM, Ch10_SLiM
+  N29D ← Ch10_SLiM
+  P36Q ← Ch5_IDR_Pro, Ch10_SLiM
+  P47S ← Ch5_IDR_Pro, Ch7_PTM
+  D48G ← Ch10_SLiM
+  D49H ← Ch10_SLiM
+  D49N ← Ch10_SLiM
+  I50T ← Ch10_SLiM
+  P58A ← Ch10_SLiM
+  G59D ← Ch10_SLiM, GateB_IDR_Gly
+  A74V ← Ch10_SLiM
+  P75S ← Ch5_IDR_Pro, Ch10_SLiM
+  A79V ← Ch10_SLiM
+  P82L ← Ch5_IDR_Pro, Ch10_SLiM
+  A83P ← Ch5_IDR_Pro
+  A84T ← Ch10_SLiM
+  R290C ← Ch7_PTM
+  K292R ← Ch7_PTM
+  G293W ← Ch7_PTM, GateB_IDR_Gly
+  G302A ← GateB_IDR_Gly
+  S315T ← Ch7_PTM
+  P316T ← Ch5_IDR_Pro, Ch7_PTM
+  G360A ← GateB_IDR_Gly
+  G374R ← Ch7_PTM, Ch10_SLiM, GateB_IDR_Gly
+  Q375K ← Ch10_SLiM
+  R379S ← Ch10_SLiM
+  R379L ← Ch10_SLiM
+  R379H ← Ch10_SLiM
+  T387P ← Ch5_IDR_Pro
+  E388A ← Ch10_SLiM
+  E388Q ← Ch10_SLiM
+  D393Y ← Ch7_PTM, Ch10_SLiM
+
+■ IDR FN (46):
+  L14V
+  D21E
+  V31I
+  L45V
+  D49E
+  D57E
+  P58T
+  D61E
+  E62K
+  R65G
+  M66I
+  P72T
+  P72S
+  P72L
+  A74G
+  A78G
+  T81I
+  A83E
+  E294K
+  P295L
+  H296R
+  E298Q
+  P301L
+  S303N
+  T304A
+  A307V
+  A307T
+  P309S
+  N310K
+  N310D
+  N311S
+  N311H
+  Q317H
+  Q317R
+  P318L
+  D324H
+  S362N
+  S362C
+  S362I
+  A364S
+  H368Q
+  T377I
+  S378C
+  L383F
+  M384I
+  D393E
+
+[Saved: v18_final_results_dump.json]
