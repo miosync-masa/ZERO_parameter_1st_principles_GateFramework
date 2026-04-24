@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: pathogenicity-gates
-Version: 0.4.0.dev0
+Version: 0.5.0.dev0
 Summary: Zero-parameter first-principles pathogenicity prediction via Gate & Channel framework
 Author-email: Masamichi Iizumi <masamichi@miosync.com>
 License: MIT

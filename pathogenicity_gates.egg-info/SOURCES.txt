@@ -5,6 +5,7 @@ pathogenicity_gates/predictor.py
 pathogenicity_gates.egg-info/PKG-INFO
 pathogenicity_gates.egg-info/SOURCES.txt
 pathogenicity_gates.egg-info/dependency_links.txt
+pathogenicity_gates.egg-info/entry_points.txt
 pathogenicity_gates.egg-info/requires.txt
 pathogenicity_gates.egg-info/top_level.txt
 pathogenicity_gates/adapters/__init__.py
@@ -30,6 +31,19 @@ pathogenicity_gates/channels/structural/ch08_oligomer.py
 pathogenicity_gates/channels/structural/ch09_salt_bridge.py
 pathogenicity_gates/channels/universal/__init__.py
 pathogenicity_gates/channels/universal/ch07_ptm.py
+pathogenicity_gates/cli/__init__.py
+pathogenicity_gates/cli/__main__.py
+pathogenicity_gates/cli/main.py
+pathogenicity_gates/cli/utils.py
+pathogenicity_gates/cli/commands/__init__.py
+pathogenicity_gates/cli/commands/explain.py
+pathogenicity_gates/cli/commands/list_proteins.py
+pathogenicity_gates/cli/commands/predict.py
+pathogenicity_gates/cli/commands/predict_batch.py
+pathogenicity_gates/cli/formatters/__init__.py
+pathogenicity_gates/cli/formatters/compact_fmt.py
+pathogenicity_gates/cli/formatters/json_fmt.py
+pathogenicity_gates/cli/formatters/table_fmt.py
 pathogenicity_gates/data/brca1/annotation.yaml
 pathogenicity_gates/data/brca1/brca1_sequence.json
 pathogenicity_gates/data/brca1/brca1_uniprot_features.json

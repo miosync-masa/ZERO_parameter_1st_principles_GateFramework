@@ -1,0 +1,2 @@
+[console_scripts]
+pathogenicity-gates = pathogenicity_gates.cli.main:main
