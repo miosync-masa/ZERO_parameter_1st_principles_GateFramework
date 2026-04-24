@@ -4,10 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pathogenicity-gates"
-version = "0.4.0-dev"
+version = "0.5.0-dev"
 description = "Zero-parameter first-principles pathogenicity prediction via Gate & Channel framework"
 authors = [
-    {name = "Masamichi Iizumi", email = "m.iizumi@miosync.email"},
+    {name = "Masamichi Iizumi", email = "masamichi@miosync.com"},
 ]
 readme = "README.md"
 requires-python = ">=3.9"
@@ -22,6 +22,9 @@ dev = [
     "pytest>=7.0",
     "pytest-cov>=4.0",
 ]
+
+[project.scripts]
+pathogenicity-gates = "pathogenicity_gates.cli.main:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
