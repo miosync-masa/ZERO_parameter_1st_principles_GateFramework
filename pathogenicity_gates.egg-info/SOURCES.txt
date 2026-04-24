@@ -9,6 +9,7 @@ pathogenicity_gates.egg-info/entry_points.txt
 pathogenicity_gates.egg-info/requires.txt
 pathogenicity_gates.egg-info/top_level.txt
 pathogenicity_gates/adapters/__init__.py
+pathogenicity_gates/adapters/direct_builder.py
 pathogenicity_gates/adapters/v18_adapter.py
 pathogenicity_gates/annotations/__init__.py
 pathogenicity_gates/annotations/loader.py
@@ -90,7 +91,9 @@ pathogenicity_gates/structure/features.py
 pathogenicity_gates/structure/parser.py
 pathogenicity_gates/supplementary/__init__.py
 pathogenicity_gates/supplementary/generate_transferability_data.py
+tests/test_no_legacy_leak.py
 tests/test_phase1_v18_regression.py
 tests/test_phase2_yaml_regression.py
 tests/test_phase3_channel_isolation.py
 tests/test_phase4_transferability.py
+tests/test_phase5_cli.py
